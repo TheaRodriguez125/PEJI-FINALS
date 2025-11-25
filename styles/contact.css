@@ -1,0 +1,237 @@
+.header {
+  min-height: 450px;
+  height: 450px;
+}
+
+.header-section h1,
+.header-section h3,
+.header-section h4 {
+  margin-bottom: 40px;
+}
+
+.header-section h1 {
+  width: 500px;
+  transform: scaleY(1.2);
+}
+
+.header-section h3 {
+  margin-bottom: 0;
+}
+
+.contact-icon-row {
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.single-contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-contact-icon h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.single-contact-icon h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.single-contact-icon img {
+  width: 70px;
+  margin-bottom: 50px;
+}
+
+.single-contact-icon .contact-number {
+  font-family: "Open Sans";
+  font-weight: 350;
+}
+
+.send-message-section {
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: #f2f3f5;
+}
+
+.message-info1 {
+  border-bottom: solid 1px #d1d5dbc4;
+}
+
+.message-info2 {
+  margin-top: 30px;
+}
+
+.message-info1 h1,
+.message-info1 h2,
+.message-info1 h4,
+.message-info2 h2 {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.message-info1 h4 {
+  font-weight: 500;
+  color: #f98125;
+  letter-spacing: 3px;
+}
+
+.message-info1 h1 {
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 3px;
+  transform: scaleY(1.2);
+  transform-origin: center center;
+}
+
+.message-info1 h3,
+.message-info2 h3 {
+  margin: 0;
+  font-weight: 300;
+  line-height: 35px;
+  margin-bottom: 60px;
+}
+
+.message-info2 h3 {
+  margin-bottom: 0;
+}
+
+.message-info1 h2,
+.message-info2 h2 {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.message-info1 ul {
+  margin-bottom: 60px;
+}
+
+.message-info1 li {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #11224d;
+}
+
+.message-info1 li::marker {
+  color: #f98125;
+}
+
+.message-form {
+  background-color: white;
+  padding: 50px;
+  margin: 0px 0px 0px 50px;
+  box-shadow: 0px 5px 20px #11224d4f;
+}
+
+.message-form label,
+.message-form button {
+  display: block;
+}
+
+.message-form label {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.message-form input,
+.message-form textarea {
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: raleway;
+  color: #11224d;
+  border: solid 1px #d1d5dbc4;
+  box-sizing: border-box;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+  outline: none;
+  border: solid 1px #11224d;
+}
+
+.message-form button {
+  width: 100%;
+  padding: 20px 0px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f98125;
+  color: white;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.message-form button:hover {
+  background-color: #fb9b50;
+}
+
+.map-section {
+  width: 100%;
+  background-color: rgb(199, 198, 198);
+  height: 550px;
+  position: relative;
+}
+
+.map-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 400px;
+  height: 300px;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  box-shadow: 0px 5px 20px #11224d4f;
+}
+
+.map-info h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.map-info h3 {
+  margin: 0;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-info button {
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #11224d;
+  color: white;
+  border: none;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.map-info button:hover {
+  background-color: #193a6f;
+}

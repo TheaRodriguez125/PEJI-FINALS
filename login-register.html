@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Balani Login</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/login-register.css" />
+
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left-section">
+        <h2>Balani</h2>
+      </div>
+      <div class="middle-section">
+        <h3>HOME</h3>
+        <h3>PRODUCTS</h3>
+        <h3>CONTACT US</h3>
+      </div>
+      <div class="right-section">
+        <div class="add-to-cart">
+          <img src="icons/shopping-cart.svg" />
+          <div class="cart-items">
+            <p>0</p>
+          </div>
+        </div>
+        <!-- <h3>Patrick</h3> -->
+        <img src="icons/user.svg" />
+      </div>
+    </nav>
+
+    <main>
+      <section class="user-login-section">
+        <div class="user-left-section">
+          <img src="icons/flat-lay-workstation-with-copy-space-laptop.jpg" />
+          <div class="user-left-section-info">
+            <h1>Welcome Back</h1>
+            <h3>
+              Sign in to access your account and continue your shopping
+              experience with us.
+            </h3>
+          </div>
+        </div>
+        <div class="user-right-section">
+          <h2>Balani</h2>
+          <h1>Sign In</h1>
+          <h3>Enter your credentials to access your account</h3>
+          <form action="/submit" method="POST">
+            <label for="email">EMAIL ADDRESS</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="youremail@example.com"
+              required
+            />
+
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="••••••••"
+              required
+            />
+
+            <button type="submit">SIGN IN</button>
+          </form>
+          <h3 class="h3-guide">
+            Don't have an account?
+            <span class="h3-guide-change">Create Account</span>
+          </h3>
+          <div class="back-home-button">
+            <img src="icons/arrow-left.svg" />
+            <h3>BACK TO HOME</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="user-register-section">
+        <div class="user-left-section">
+          <img src="icons/flat-lay-workstation-with-copy-space-laptop.jpg" />
+          <div class="user-left-section-info">
+            <h1>Join Our Community</h1>
+            <h3>
+              Create an account to access exclusive products, special offers,
+              and personalized shopping experiences.
+            </h3>
+          </div>
+        </div>
+        <div class="user-right-section">
+          <h2>Balani</h2>
+          <h1>Create Account</h1>
+          <h3>Join us and start your shopping journey</h3>
+          <form action="/submit" method="POST">
+            <label for="name">FULL NAME</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+
+            <label for="email">EMAIL ADDRESS</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="youremail@example.com"
+              required
+            />
+
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="••••••••"
+              minlength="6"
+              required
+            />
+
+            <h3 class="password-reminder">Must be at least 6 characters</h3>
+
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="••••••••"
+              minlength="6"
+              required
+            />
+
+            <button type="submit">CREATE ACCOUNT</button>
+          </form>
+          <h3 class="h3-guide">
+            Already have an account?
+            <span class="h3-guide-change">Sign In</span>
+          </h3>
+          <div class="back-home-button">
+            <img src="icons/arrow-left.svg" />
+            <h3>BACK TO HOME</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="main-footer-section">
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">Balani</h1>
+          <p class="single-footer-description">
+            Your trusted destination for premium products across electronics,
+            fashion, home goods, and fitness equipment.
+          </p>
+          <div class="socials-row">
+            <div class="socials-icon">
+              <img src="icons/facebook.svg" />
+            </div>
+            <div class="socials-icon">
+              <img src="icons/twitter.svg" />
+            </div>
+            <div class="socials-icon">
+              <img
+                src="icons/instagram-socials-social-media-icon-svgrepo-com.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">SHOP</h1>
+          <div class="single-footer-links">
+            <p>All Products</p>
+            <p>Electronics &amp; Gadgets</p>
+            <p>Fashion &amp; Apparel</p>
+            <p>Home &amp; Kitchen</p>
+            <p>Health &amp; Fitness</p>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">QUICK LINKS</h1>
+          <div class="single-footer-links">
+            <p>Home</p>
+            <p>My Account</p>
+            <p>Shopping Cart</p>
+            <p>Orders</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">CONTACT</h1>
+          <div class="single-footer-contacts">
+            <div class="contact-row">
+              <img src="icons/mail.svg" />
+              <p>support@balani.com</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/phone.svg" />
+              <p class="contact-number">(012) 345 6789</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/map-marker-2.svg" />
+              <p>Lukushin Ibaba, Alfonso</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyright-section">
+        &copy; 2025 Balani. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
