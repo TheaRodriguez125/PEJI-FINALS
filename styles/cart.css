@@ -203,6 +203,8 @@
   background-color: #f2f3f5;
   height: fit-content;
   padding: 40px;
+  position: sticky;
+  top: 100px;
 }
 
 .cart-order-summary {
@@ -223,7 +225,7 @@
 .cart-order-summary-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .cart-order-summary-row h3 {

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Balani Checkout</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/checkout.css" />
+
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left-section">
+        <h2>Balani</h2>
+      </div>
+      <div class="middle-section">
+        <h3>HOME</h3>
+        <h3>PRODUCTS</h3>
+        <h3>CONTACT US</h3>
+      </div>
+      <div class="right-section">
+        <div class="add-to-cart">
+          <img src="icons/shopping-cart.svg" />
+          <div class="cart-items">
+            <p>0</p>
+          </div>
+        </div>
+        <!-- <h3>Patrick</h3> -->
+        <img src="icons/user.svg" />
+      </div>
+    </nav>
+
+    <main>
+      <section class="checkout-navigation">
+        <div class="checkout-back-button">
+          <img src="icons/arrow-left-orange.svg" />
+          <h3>BACK TO CART</h3>
+        </div>
+        <h1>Checkout</h1>
+      </section>
+
+      <!-- section 1 -->
+
+      <section class="checkout-steps">
+        <div class="checkout-steps-column">
+          <div class="single-checkout active">
+            <img src="icons/map-marker-white.svg" />
+          </div>
+          <h3 class="active-text">SHIPPING</h3>
+        </div>
+
+        <div class="checkout-steps-line"></div>
+
+        <div class="checkout-steps-column">
+          <div class="single-checkout">
+            <div class="single-checkout-dark">
+              <img src="icons/credit-card-gray.svg" />
+              <div class="single-checkout-light">
+                <img src="icons/credit-card-white.svg" />
+              </div>
+            </div>
+          </div>
+          <h3>PAYMENT</h3>
+        </div>
+
+        <div class="checkout-steps-line"></div>
+
+        <div class="checkout-steps-column">
+          <div class="single-checkout">
+            <div class="single-checkout-dark">
+              <img src="icons/check-gray.svg" />
+              <div class="single-checkout-light">
+                <img src="icons/check-white.svg" />
+              </div>
+            </div>
+          </div>
+          <h3>REVIEW</h3>
+        </div>
+      </section>
+
+      <section class="checkout-grid-column">
+        <div class="checkout-rows">
+          <div class="checkout-rows-section">
+            <div class="checkout-rows-section-content">
+              <h1>SHIPPING ADDRESS</h1>
+              <form action="/">
+                <div class="checkout-options">
+                  <input
+                    type="radio"
+                    id="address1"
+                    name="address"
+                    value="address1"
+                  />
+
+                  <label for="address1">
+                    <h3 class="name">Patrick Peji</h3>
+                    <h3>Luksuhin Ibaba, Alfonso</h3>
+                    <h3>Cavite, Philippines 4123</h3>
+                    <h3 class="number">0917 587 4500</h3>
+                  </label>
+                </div>
+
+                <div class="checkout-options">
+                  <input
+                    type="radio"
+                    id="address2"
+                    name="address"
+                    value="address2"
+                  />
+
+                  <label for="address2">
+                    <h3 class="name">Patrick Peji</h3>
+                    <h3>Luksuhin Itaas, Alfonso</h3>
+                    <h3>Cavite, Philippines 4123</h3>
+
+                    <h3 class="number">0917 587 4500</h3>
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="add-address">
+              <img src="icons/plus.svg" />
+              <h3>ADD NEW ADDRESS</h3>
+            </div>
+          </div>
+
+          <div class="checkout-rows-section">
+            <div class="checkout-rows-section-content">
+              <h1>SHIPPING METHOD</h1>
+              <form action="/">
+                <div class="checkout-options">
+                  <input
+                    type="radio"
+                    id="standard"
+                    name="ship-method"
+                    value="address1"
+                  />
+
+                  <label for="standard">
+                    <div class="method-options">
+                      <div class="method-options-info">
+                        <h3 class="name">Standard Shipping</h3>
+                        <h3 class="number">5-7 business days</h3>
+                      </div>
+                      <h3 class="number">Free</h3>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="checkout-options">
+                  <input
+                    type="radio"
+                    id="express"
+                    name="ship-method"
+                    value="express"
+                  />
+
+                  <label for="express">
+                    <div class="method-options">
+                      <div class="method-options-info">
+                        <h3 class="name">Express Shipping</h3>
+                        <h3 class="number">2-3 business days</h3>
+                      </div>
+                      <h3 class="number">PHP 100</h3>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="checkout-options">
+                  <input
+                    type="radio"
+                    id="overnight"
+                    name="ship-method"
+                    value="overnight"
+                  />
+
+                  <label for="overnight">
+                    <div class="method-options">
+                      <div class="method-options-info">
+                        <h3 class="name">Overnight Shipping</h3>
+                        <h3 class="number">1 business day</h3>
+                      </div>
+                      <h3 class="number">PHP 200</h3>
+                    </div>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="checkout-button-container">
+            <div></div>
+            <button>CONTINUE TO PAYMENT</button>
+          </div>
+        </div>
+
+        <div class="checkout-order-summary-section">
+          <div class="checkout-order-summary">
+            <h1>ORDER SUMMARY</h1>
+            <div class="checkout-order-summary-row">
+              <h3>Subtotal (2 items)</h3>
+              <h3 class="checkout-item-price">Php 11,498</h3>
+            </div>
+            <div class="checkout-order-summary-row">
+              <h3>Shipping</h3>
+              <h3 class="item-price">Free</h3>
+            </div>
+            <div class="checkout-order-summary-row">
+              <h3>Tax</h3>
+              <h3 class="checkout-item-price">Php 72.50</h3>
+            </div>
+          </div>
+          <div class="checkout-order-summary-row">
+            <h3>TOTAL</h3>
+            <h2 class="checkout-item-price">Php 11,498</h2>
+          </div>
+          <div class="checkout-order-info">
+            <img src="icons/truck-svgrepo-com.svg" />
+            <h4>Free returns within 30 days</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 2 -->
+      <section class="checkout-steps">
+        <div class="checkout-steps-column">
+          <div class="single-checkout active">
+            <img src="icons/map-marker-white.svg" />
+          </div>
+          <h3 class="active-text">SHIPPING</h3>
+        </div>
+
+        <div class="checkout-steps-line active-line"></div>
+
+        <div class="checkout-steps-column">
+          <div class="single-checkout active">
+            <div class="single-checkout-dark">
+              <img src="icons/credit-card-gray.svg" />
+              <div class="single-checkout-light">
+                <img src="icons/credit-card-white.svg" />
+              </div>
+            </div>
+          </div>
+          <h3 class="active-text">PAYMENT</h3>
+        </div>
+
+        <div class="checkout-steps-line"></div>
+
+        <div class="checkout-steps-column">
+          <div class="single-checkout">
+            <div class="single-checkout-dark">
+              <img src="icons/check-gray.svg" />
+              <div class="single-checkout-light">
+                <img src="icons/check-white.svg" />
+              </div>
+            </div>
+          </div>
+          <h3>REVIEW</h3>
+        </div>
+      </section>
+
+      <section class="checkout-grid-column">
+        <div class="checkout-rows">
+          <div class="checkout-rows-section">
+            <div class="checkout-rows-section-content">
+              <h1>PAYMENT METHOD</h1>
+              <form action="/">
+                <div class="checkout-options">
+                  <input type="radio" id="card" name="payment" value="card" />
+
+                  <label for="card">
+                    <h3 class="name payment">Credit / Debit Card</h3>
+                  </label>
+                </div>
+
+                <div class="checkout-options">
+                  <input
+                    type="radio"
+                    id="paypal"
+                    name="payment"
+                    value="paypal"
+                  />
+
+                  <label for="paypal">
+                    <h3 class="name payment">Paypal</h3>
+                  </label>
+                </div>
+
+                <div class="checkout-options">
+                  <input type="radio" id="cod" name="payment" value="cod" />
+
+                  <label for="cod">
+                    <h3 class="name payment">Cash On Delivery</h3>
+                  </label>
+                </div>
+              </form>
+
+              <div class="card-input-section">
+                <form action="/submit" method="POST">
+                  <label for="card-number">CARD NUMBER</label>
+                  <input
+                    class="number"
+                    type="text"
+                    id="card-number"
+                    placeholder="1234 5678 9012 3456"
+                    pattern="\d{4} \d{4} \d{4} \d{4}"
+                    maxlength="19"
+                    required
+                  />
+
+                  <label for="card-name">CARDHOLDER NAME</label>
+                  <input
+                    type="text"
+                    id="card-name"
+                    placeholder="Your Name"
+                    required
+                  />
+
+                  <div class="card-input-section-row">
+                    <div>
+                      <label for="card-expiry">EXPIRY DATE</label>
+                      <input
+                        class="number"
+                        type="text"
+                        id="card-expiry"
+                        placeholder="MM/YY"
+                        pattern="(0[1-9]|1[0-2])\/\d{2}"
+                        maxlength="5"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label for="card-cvv">CVV</label>
+                      <input
+                        class="number"
+                        type="text"
+                        id="card-cvv"
+                        placeholder="123"
+                        pattern="\d{3}"
+                        maxlength="3"
+                        required
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-button-container">
+            <button class="button">BACK</button>
+
+            <button>REVIEW ORDER</button>
+          </div>
+        </div>
+
+        <div class="checkout-order-summary-section">
+          <div class="checkout-order-summary">
+            <h1>ORDER SUMMARY</h1>
+            <div class="checkout-order-summary-row">
+              <h3>Subtotal (2 items)</h3>
+              <h3 class="checkout-item-price">Php 11,498</h3>
+            </div>
+            <div class="checkout-order-summary-row">
+              <h3>Shipping</h3>
+              <h3 class="item-price">Free</h3>
+            </div>
+            <div class="checkout-order-summary-row">
+              <h3>Tax</h3>
+              <h3 class="checkout-item-price">Php 72.50</h3>
+            </div>
+          </div>
+          <div class="checkout-order-summary-row">
+            <h3>TOTAL</h3>
+            <h2 class="checkout-item-price">Php 11,498</h2>
+          </div>
+          <div class="checkout-order-info">
+            <img src="icons/truck-svgrepo-com.svg" />
+            <h4>Free returns within 30 days</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3 -->
+      <section class="checkout-steps">
+        <div class="checkout-steps-column">
+          <div class="single-checkout active">
+            <img src="icons/map-marker-white.svg" />
+          </div>
+          <h3 class="active-text">SHIPPING</h3>
+        </div>
+
+        <div class="checkout-steps-line active-line"></div>
+
+        <div class="checkout-steps-column">
+          <div class="single-checkout active">
+            <div class="single-checkout-dark">
+              <img src="icons/credit-card-gray.svg" />
+              <div class="single-checkout-light">
+                <img src="icons/credit-card-white.svg" />
+              </div>
+            </div>
+          </div>
+          <h3 class="active-text">PAYMENT</h3>
+        </div>
+
+        <div class="checkout-steps-line active-line"></div>
+
+        <div class="checkout-steps-column">
+          <div class="single-checkout active">
+            <div class="single-checkout-dark">
+              <img src="icons/check-gray.svg" />
+              <div class="single-checkout-light">
+                <img src="icons/check-white.svg" />
+              </div>
+            </div>
+          </div>
+          <h3 class="active-text">REVIEW</h3>
+        </div>
+      </section>
+
+      <section class="checkout-grid-column">
+        <div class="checkout-rows">
+          <div class="checkout-rows-section">
+            <div class="checkout-rows-section-content">
+              <h1>REVIEW YOUR ORDER</h1>
+              <div class="review-order-row">
+                <div>
+                  <h2>SHIPPING ADDRESS</h2>
+                  <h3>Patrick Peji</h3>
+                  <h3>Luksuhin Ibaba, Alfonso</h3>
+                  <h3>Cavite, Philippines 4123</h3>
+                </div>
+                <div>
+                  <button>EDIT</button>
+                </div>
+              </div>
+
+              <div class="review-order-row">
+                <div>
+                  <h2>PAYMENT METHOD</h2>
+                  <h3>Credit / Debit Card</h3>
+                </div>
+                <div>
+                  <button>EDIT</button>
+                </div>
+              </div>
+
+              <div class="review-order-row-items">
+                <h2>ORDER ITEMS</h2>
+                <div class="review-order-row-items-row">
+                  <img
+                    src="icons/HD-wallpaper-laptop-keyboard-marble-aesthetics.jpg"
+                  />
+                  <div class="review-order-row-items-row-info">
+                    <div>
+                      <h3 class="products">Portable Bluetooth Speaker</h3>
+                      <h3 class="number">Quantity: 1</h3>
+                    </div>
+                    <div>
+                      <h3 class="number price">PHP 2,499</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-order-row-items-row">
+                  <img
+                    src="icons/HD-wallpaper-laptop-keyboard-marble-aesthetics.jpg"
+                  />
+                  <div class="review-order-row-items-row-info">
+                    <div>
+                      <h3 class="products">Smart Watch Pro</h3>
+                      <h3 class="number">Quantity: 1</h3>
+                    </div>
+                    <div>
+                      <h3 class="number price">PHP 8,999</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-button-container">
+            <button class="button">BACK</button>
+
+            <button class="order-button">PLACE ORDER</button>
+          </div>
+        </div>
+
+        <div class="checkout-order-summary-section">
+          <div class="checkout-order-summary">
+            <h1>ORDER SUMMARY</h1>
+            <div class="checkout-order-summary-row">
+              <h3>Subtotal (2 items)</h3>
+              <h3 class="checkout-item-price">Php 11,498</h3>
+            </div>
+            <div class="checkout-order-summary-row">
+              <h3>Shipping</h3>
+              <h3 class="item-price">Free</h3>
+            </div>
+            <div class="checkout-order-summary-row">
+              <h3>Tax</h3>
+              <h3 class="checkout-item-price">Php 72.50</h3>
+            </div>
+          </div>
+          <div class="checkout-order-summary-row">
+            <h3>TOTAL</h3>
+            <h2 class="checkout-item-price">Php 11,498</h2>
+          </div>
+          <div class="checkout-order-info">
+            <img src="icons/truck-svgrepo-com.svg" />
+            <h4>Free returns within 30 days</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="main-footer-section">
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">Balani</h1>
+          <p class="single-footer-description">
+            Your trusted destination for premium products across electronics,
+            fashion, home goods, and fitness equipment.
+          </p>
+          <div class="socials-row">
+            <div class="socials-icon">
+              <img src="icons/facebook.svg" />
+            </div>
+            <div class="socials-icon">
+              <img src="icons/twitter.svg" />
+            </div>
+            <div class="socials-icon">
+              <img
+                src="icons/instagram-socials-social-media-icon-svgrepo-com.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">SHOP</h1>
+          <div class="single-footer-links">
+            <p>All Products</p>
+            <p>Electronics &amp; Gadgets</p>
+            <p>Fashion &amp; Apparel</p>
+            <p>Home &amp; Kitchen</p>
+            <p>Health &amp; Fitness</p>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">QUICK LINKS</h1>
+          <div class="single-footer-links">
+            <p>Home</p>
+            <p>My Account</p>
+            <p>Shopping Cart</p>
+            <p>Orders</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">CONTACT</h1>
+          <div class="single-footer-contacts">
+            <div class="contact-row">
+              <img src="icons/mail.svg" />
+              <p>support@balani.com</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/phone.svg" />
+              <p class="contact-number">(012) 345 6789</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/map-marker-2.svg" />
+              <p>Lukushin Ibaba, Alfonso</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyright-section">
+        &copy; 2025 Balani. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
