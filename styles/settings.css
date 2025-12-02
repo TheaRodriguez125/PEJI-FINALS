@@ -1,0 +1,61 @@
+.header-address-section {
+  padding: 60px 50px;
+  background-color: #11224d;
+}
+
+.address-back-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.address-back-button h6 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f98125;
+  letter-spacing: 1px;
+
+  transition: color 0.15s;
+  cursor: pointer;
+}
+
+.address-back-button h6:hover {
+  color: #fb9b50;
+}
+
+.address-back-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.header-address-section-row h1,
+.header-address-section-row h5,
+.header-address-section-row h6 {
+  margin: 0;
+  color: white;
+}
+
+.header-address-section-row h6 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #f98125;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.header-address-section-row h1 {
+  font-weight: 300;
+  font-size: 56px;
+  letter-spacing: 3px;
+  transform: scaleY(1.2);
+  transform-origin: center center;
+  margin-bottom: 20px;
+}
+
+.header-address-section-row h5 {
+  font-weight: 300;
+  font-size: 16px;
+}
