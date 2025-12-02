@@ -86,7 +86,7 @@
   transition: color 0.15s, background-color 0.15s;
 }
 
-.category-row button:active,
+.category-row button:focus,
 .category-row button:hover {
   background-color: #11224d;
   color: white;
