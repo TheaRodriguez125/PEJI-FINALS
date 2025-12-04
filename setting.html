@@ -41,17 +41,164 @@
     </nav>
 
     <main>
-      <header class="header-address-section">
-        <div class="address-back-button">
+      <header class="header-settings-section">
+        <div class="settings-back-button">
           <img src="icons/arrow-left-orange.svg" />
           <h6>BACK TO ACCOUNT</h6>
         </div>
-        <div class="header-address-section-row">
+        <div class="header-settings-section-row">
           <h6>ACCOUNT SETTINGS</h6>
           <h1>Settings</h1>
           <h5>Manage your account information and security</h5>
         </div>
       </header>
+
+      <section class="settings-section">
+        <div class="single-settings">
+          <div class="single-settings-title">
+            <div class="single-settings-title-profile">
+              <img src="icons/user-orange.svg" />
+            </div>
+            <div>
+              <h3>Profile Information</h3>
+              <h5>Update your account details</h5>
+            </div>
+          </div>
+          <form action="/submit" method="POST">
+            <label for="name">FULL NAME</label>
+            <input type="text" id="name" placeholder="Patrick Peji" required />
+
+            <label for="email">EMAIL ADDRESS</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="patrick@gmail.com"
+              required
+            />
+
+            <label for="number">PHONE NUMBER</label>
+            <input
+              class="number"
+              type="text"
+              id="number"
+              placeholder="0917 123 4567"
+              required
+            />
+            <div class="form-button-section">
+              <button class="orange" type="submit">
+                <img src="icons/save.svg" /> SAVE CHANGES
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="single-settings">
+          <div class="single-settings-title">
+            <div class="single-settings-title-profile">
+              <img src="icons/lock-orange.svg" />
+            </div>
+            <div>
+              <h3>Change Password</h3>
+              <h5>Update your password to keep your account secure</h5>
+            </div>
+          </div>
+          <form action="/submit" method="POST">
+            <label for="current-password">CURRENT PASSWORD</label>
+            <input
+              type="password"
+              id="current-password"
+              minlength="6"
+              required
+            />
+
+            <label for="new-password">NEW PASSWORD</label>
+            <input type="password" id="new-password" minlength="6" required />
+
+            <h3 class="password-reminder">Must be at least 6 characters</h3>
+
+            <label for="confirm-password">CONFIRM NEW PASSWORD</label>
+            <input
+              type="password"
+              id="confirm-password"
+              minlength="6"
+              required
+            />
+
+            <div class="form-button-section">
+              <button class="blue" type="submit">
+                <img src="icons/lock.svg" /> UPDATE PASSWORD
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <section class="main-footer-section">
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">Balani</h1>
+          <p class="single-footer-description">
+            Your trusted destination for premium products across electronics,
+            fashion, home goods, and fitness equipment.
+          </p>
+          <div class="socials-row">
+            <div class="socials-icon">
+              <img src="icons/facebook.svg" />
+            </div>
+            <div class="socials-icon">
+              <img src="icons/twitter.svg" />
+            </div>
+            <div class="socials-icon">
+              <img
+                src="icons/instagram-socials-social-media-icon-svgrepo-com.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">SHOP</h1>
+          <div class="single-footer-links">
+            <p>All Products</p>
+            <p>Electronics &amp; Gadgets</p>
+            <p>Fashion &amp; Apparel</p>
+            <p>Home &amp; Kitchen</p>
+            <p>Health &amp; Fitness</p>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">QUICK LINKS</h1>
+          <div class="single-footer-links">
+            <p>Home</p>
+            <p>My Account</p>
+            <p>Shopping Cart</p>
+            <p>Orders</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">CONTACT</h1>
+          <div class="single-footer-contacts">
+            <div class="contact-row">
+              <img src="icons/mail.svg" />
+              <p>support@balani.com</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/phone.svg" />
+              <p class="contact-number">(012) 345 6789</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/map-marker-2.svg" />
+              <p>Lukushin Ibaba, Alfonso</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyright-section">
+        &copy; 2025 Balani. All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>
