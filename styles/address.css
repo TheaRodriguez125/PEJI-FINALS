@@ -13,8 +13,8 @@
 
 .address-back-button h6 {
   margin: 0;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   color: #f98125;
   letter-spacing: 1px;
 
@@ -45,16 +45,16 @@
 }
 
 .header-address-section-row h6 {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   color: #f98125;
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
 
 .header-address-section-row h1 {
-  font-weight: 300;
   font-size: 56px;
+  font-weight: 300;
   letter-spacing: 3px;
   transform: scaleY(1.2);
   transform-origin: center center;
@@ -62,8 +62,8 @@
 }
 
 .header-address-section-row h5 {
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
 }
 
 .header-address-section-row button {
@@ -73,8 +73,8 @@
   gap: 10px;
 
   padding: 10px 20px;
-  font-family: raleway;
   font-size: 14px;
+  font-family: raleway;
   color: white;
   letter-spacing: 1px;
   border: none;
@@ -91,4 +91,132 @@
 
 .header-address-section-row button:hover {
   background-color: #fb9b50;
+}
+
+.address-section {
+  padding: 50px;
+  background-color: #f2f3f5;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.single-address {
+  background-color: white;
+  padding: 40px;
+
+  box-shadow: 0px 5px 20px #11224d4f;
+
+  position: relative;
+}
+
+.single-address-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  padding-bottom: 20px;
+}
+
+.single-address-info img {
+  width: 30px;
+  height: 30px;
+}
+
+.single-address-info h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.single-address-info h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #4e525c;
+  margin-bottom: 10px;
+}
+
+.single-address-info .number {
+  font-family: "Open Sans";
+  margin-bottom: 0;
+}
+
+.address-button-section {
+  border-top: solid 1px #d1d5dbc4;
+  padding-top: 20px;
+
+  display: flex;
+  gap: 15px;
+}
+
+.address-button-section button {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.address-button-section button img {
+  width: 18px;
+  height: 18px;
+}
+
+.address-button-section .set-as-default {
+  background-color: #11224d;
+  color: white;
+  border: none;
+  transition: background-color 0.15s;
+}
+
+.address-button-section .set-as-default:hover {
+  background-color: #193a6f;
+}
+
+.address-button-section .edit {
+  background-color: white;
+  border: solid 1px #d1d5dbc4;
+  transition: border-color 0.15s;
+}
+
+.address-button-section .edit:hover {
+  border-color: #11224d;
+}
+
+.address-button-section .delete {
+  background-color: white;
+  color: red;
+  border: solid 1px #d1d5dbc4;
+  transition: border-color 0.15s;
+}
+
+.address-button-section .delete:hover {
+  border-color: red;
+}
+
+.single-address .default {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 7px 15px;
+  background-color: #f98125;
+}
+
+.single-address .default h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
 }
