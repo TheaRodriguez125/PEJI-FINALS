@@ -53,13 +53,60 @@
             <h5>Manage your shipping addresses</h5>
           </div>
           <div>
-            <button>
+            <button
+              onclick="document.getElementById('add-address-modal').showModal()"
+            >
               <img src="icons/plus-white.svg" />
               ADD ADDRESS
             </button>
           </div>
         </div>
       </header>
+
+      <dialog class="add-address-modal" id="add-address-modal">
+        <h2>Add New Address</h2>
+        <form action="/submit" method="POST">
+          <div class="add-address-row-two">
+            <div>
+              <label for="name">FULL NAME</label>
+              <input type="text" id="name" required />
+            </div>
+            <div>
+              <label for="number">PHONE NUMBER</label>
+              <input type="text" id="number" class="number" required />
+            </div>
+          </div>
+
+          <label for="street-address">STREET ADDRESS</label>
+          <input type="text" id="street-address" class="number" required />
+
+          <div class="add-address-row-three">
+            <div>
+              <label for="city">CITY</label>
+              <input type="text" id="city" required />
+            </div>
+            <div>
+              <label for="state">STATE</label>
+              <input type="text" id="state" required />
+            </div>
+            <div>
+              <label for="zip-code">ZIP CODE</label>
+              <input type="text" id="zip-code" class="number" required />
+            </div>
+          </div>
+
+          <div class="add-address-button-section">
+            <button type="submit">SAVE ADDRESS</button>
+          </div>
+        </form>
+        <div class="close-button">
+          <button
+            onclick="document.getElementById('add-address-modal').close()"
+          >
+            &#10005;
+          </button>
+        </div>
+      </dialog>
 
       <section class="address-section">
         <div class="single-address">
