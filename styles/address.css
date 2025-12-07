@@ -146,13 +146,13 @@
   border: solid 1px #11224d;
 }
 
-.add-address-row-two {
+.add-address-modal .add-address-row-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.add-address-row-three {
+.add-address-modal .add-address-row-three {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -165,7 +165,7 @@
   justify-content: end;
 }
 
-.add-address-button-section button {
+.add-address-modal .add-address-button-section button {
   /* width: 100%; */
   font-size: 14px;
   font-weight: 400;
@@ -180,7 +180,7 @@
   transition: background-color 0.15s;
 }
 
-.add-address-button-section button:hover {
+.add-address-modal .add-address-button-section button:hover {
   background-color: #fb9b50;
 }
 
