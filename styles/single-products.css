@@ -132,6 +132,7 @@
   color: #4e525c;
 
   font-size: 24px;
+
   border: solid 1px #d1d5dbc4;
   transition: border-color 0.15s;
   cursor: pointer;
@@ -144,6 +145,8 @@
 .single-products-info-section-button button {
   width: 100%;
   font-size: 16px;
+  font-weight: 500;
+  font-family: raleway;
   letter-spacing: 1px;
   color: white;
 

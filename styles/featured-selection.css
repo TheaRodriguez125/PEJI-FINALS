@@ -33,6 +33,8 @@
   color: #11224d;
   background-color: #f2f3f5;
   font-size: 16px;
+  font-weight: 500;
+  font-family: raleway;
 
   width: 200px;
   padding: 15px 20px;
@@ -90,6 +92,8 @@
   right: 30px;
 
   font-size: 16px;
+  font-weight: 500;
+  font-family: raleway;
   letter-spacing: 1px;
   color: #11224d;
   background-color: white;

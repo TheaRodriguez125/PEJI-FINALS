@@ -166,7 +166,8 @@
 .single-settings button {
   /* width: 100%; */
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: raleway;
   letter-spacing: 1px;
   padding: 12px 20px;
 

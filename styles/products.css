@@ -51,6 +51,7 @@
 
 .search-button {
   font-size: 16px;
+  font-family: raleway;
   padding: 12px;
   color: #11224d;
   border: solid 1px #d1d5dbc4;
@@ -76,6 +77,7 @@
 }
 .category-row button {
   font-size: 16px;
+  font-family: raleway;
   letter-spacing: 1px;
   font-weight: 400;
   color: #11224d;
