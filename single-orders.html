@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Balani Order</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/single-orders.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left-section">
+        <h2>Balani</h2>
+      </div>
+      <div class="middle-section">
+        <h3>HOME</h3>
+        <h3>PRODUCTS</h3>
+        <h3>CONTACT US</h3>
+      </div>
+      <div class="right-section">
+        <div class="add-to-cart">
+          <img src="icons/shopping-cart.svg" />
+          <div class="cart-items">
+            <p>0</p>
+          </div>
+        </div>
+        <h3>Patrick</h3>
+        <!-- <img src="icons/user.svg" /> -->
+      </div>
+    </nav>
+
+    <main>
+      <header class="header-single-order-section">
+        <div class="single-order-back-button">
+          <img src="icons/arrow-left-orange.svg" />
+          <h6>BACK TO ORDERS</h6>
+        </div>
+        <div class="header-single-order-section-row">
+          <div>
+            <h6>ORDER DETAILS</h6>
+            <h1>ORD-2025-001</h1>
+            <h5>Placed on November 22, 2025</h5>
+          </div>
+          <div class="header-single-order-section-row-status">
+            <!-- <div class="header-single-order-section-status to-ship">
+              <img src="icons/box-svgrepo-com-orange.svg" />
+              <h4>TO SHIP</h4>
+            </div> -->
+            <!-- <div class="header-single-order-section-status to-receive">
+              <img src="icons/truck-svgrepo-com-blue.svg" />
+              <h4>IN TRANSIT</h4>
+            </div> -->
+            <div class="header-single-order-section-status delivered">
+              <img src="icons/check-circle-green.svg" />
+              <h4>DELIVERED</h4>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="single-order-section-grid">
+        <div>
+          <div class="single-order-section">
+            <div class="single-order-title">
+              <h2>Order Timeline</h2>
+            </div>
+            <div class="order-timeline-grid">
+              <div class="order-timeline">
+                <div class="order-timeline-icon">
+                  <img src="icons/box-svgrepo-com-white.svg" />
+                </div>
+                <div class="order-timeline-icon-line"></div>
+              </div>
+              <div class="order-timeline-info">
+                <h3>Order Placed</h3>
+                <h5 class="number">November 22, 2025</h5>
+                <h5>Your order has been received and is being processed</h5>
+              </div>
+            </div>
+            <div class="order-timeline-grid">
+              <div class="order-timeline">
+                <div class="order-timeline-icon">
+                  <img src="icons/box-svgrepo-com-white.svg" />
+                </div>
+                <div class="order-timeline-icon-line"></div>
+              </div>
+              <div class="order-timeline-info">
+                <h3>Processing</h3>
+                <h5 class="number">November 22, 2025</h5>
+                <h5>We are preparing your items for shipment</h5>
+              </div>
+            </div>
+            <div class="order-timeline-grid">
+              <div class="order-timeline">
+                <div class="order-timeline-icon">
+                  <img src="icons/truck-svgrepo-com-white.svg" />
+                </div>
+                <div class="order-timeline-icon-line"></div>
+              </div>
+              <div class="order-timeline-info">
+                <h3>Shipped</h3>
+                <h5 class="number">November 23, 2025</h5>
+                <h5>Your order is on its way</h5>
+              </div>
+            </div>
+            <div class="order-timeline-grid">
+              <div class="order-timeline">
+                <div class="order-timeline-icon">
+                  <img src="icons/check-circle-white.svg" />
+                </div>
+              </div>
+              <div class="order-timeline-info">
+                <h3>Delivered</h3>
+                <h5 class="number">November 25, 2025</h5>
+                <h5>Order delivered to your address</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-order-section">
+            <div class="single-order-title">
+              <h2>Order Items</h2>
+            </div>
+            <div class="order-items-row">
+              <img
+                src="icons/HD-wallpaper-laptop-keyboard-marble-aesthetics.jpg"
+              />
+              <div class="order-items-info">
+                <h6>ELECTRONICS &amp; GADGETS</h6>
+                <h3>Portable Bluetooth Speaker</h3>
+                <h5>Quantity: 1</h5>
+                <h5 class="price">PHP 2,499</h5>
+              </div>
+            </div>
+            <div class="order-items-row">
+              <img
+                src="icons/HD-wallpaper-laptop-keyboard-marble-aesthetics.jpg"
+              />
+              <div class="order-items-info">
+                <h6>ELECTRONICS &amp; GADGETS</h6>
+                <h3>Smart Watch Pro</h3>
+                <h5>Quantity: 1</h5>
+                <h5 class="price">PHP 8,999</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="single-order-section">
+            <div class="single-order-title">
+              <h2>Order Summary</h2>
+            </div>
+            <div class="single-order-section-row">
+              <h5>Subtotal (2 items)</h5>
+              <h5 class="number">Php 11,498</h5>
+            </div>
+            <div class="single-order-section-row">
+              <h5>Shipping</h5>
+              <h5 class="number">Free</h5>
+            </div>
+            <div class="single-order-section-row">
+              <h5>Tax</h5>
+              <h5 class="number">Php 72.50</h5>
+            </div>
+            <div class="single-order-section-row border-top">
+              <h5>Total</h5>
+              <h5 class="number">Php 11,498</h5>
+            </div>
+          </div>
+
+          <div class="single-order-section">
+            <div class="single-order-title">
+              <img src="icons/map-marker-2.svg" />
+              <h2>Shipping Address</h2>
+            </div>
+            <div class="single-order-section-info">
+              <h5 class="name">Patrick Peji</h5>
+              <h5>Luksuhin Ibaba, Alfonso</h5>
+              <h5>Cavite, Philippines 4123</h5>
+              <div class="phone-row">
+                <img src="icons/phone.svg" />
+                <h5 class="number">09175874500</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-order-section">
+            <div class="single-order-title">
+              <img src="icons/credit-card.svg" />
+              <h2>Payment Method</h2>
+            </div>
+            <div class="single-order-section-info">
+              <h5 class="payment-name">Cash On Delivery</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="main-footer-section">
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">Balani</h1>
+          <p class="single-footer-description">
+            Your trusted destination for premium products across electronics,
+            fashion, home goods, and fitness equipment.
+          </p>
+          <div class="socials-row">
+            <div class="socials-icon">
+              <img src="icons/facebook.svg" />
+            </div>
+            <div class="socials-icon">
+              <img src="icons/twitter.svg" />
+            </div>
+            <div class="socials-icon">
+              <img
+                src="icons/instagram-socials-social-media-icon-svgrepo-com.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">SHOP</h1>
+          <div class="single-footer-links">
+            <p>All Products</p>
+            <p>Electronics &amp; Gadgets</p>
+            <p>Fashion &amp; Apparel</p>
+            <p>Home &amp; Kitchen</p>
+            <p>Health &amp; Fitness</p>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">QUICK LINKS</h1>
+          <div class="single-footer-links">
+            <p>Home</p>
+            <p>My Account</p>
+            <p>Shopping Cart</p>
+            <p>Orders</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">CONTACT</h1>
+          <div class="single-footer-contacts">
+            <div class="contact-row">
+              <img src="icons/mail.svg" />
+              <p>support@balani.com</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/phone.svg" />
+              <p class="contact-number">(012) 345 6789</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/map-marker-2.svg" />
+              <p>Lukushin Ibaba, Alfonso</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyright-section">
+        &copy; 2025 Balani. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
