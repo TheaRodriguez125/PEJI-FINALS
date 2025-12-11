@@ -100,8 +100,296 @@
             ITEMS TO SHIP
           </button>
         </div>
-        <div class="single-admin-section">Try</div>
+
+        <!-- ALL ORDERS SECTION -->
+
+        <div class="single-admin-section">
+          <h2>All Orders</h2>
+          <div class="admin-search-section">
+            <div class="admin-search-bar">
+              <input
+                type="text"
+                placeholder="Search by order number, customer name, or email..."
+              />
+              <button>Search</button>
+            </div>
+            <select id="status">
+              <option value="all-status">All Statuses</option>
+              <option value="pending">Pending</option>
+              <option value="processing">Processing</option>
+              <option value="shipped">Shipped</option>
+              <option value="delivered">Delivered</option>
+            </select>
+          </div>
+
+          <div class="admin-table-section">
+            <table>
+              <tr>
+                <th>ORDER NUMBER</th>
+                <th>CUSTOMER</th>
+                <th>DATE</th>
+                <th>ITEMS</th>
+                <th>TOTAL</th>
+                <th>STATUS</th>
+                <th>ACTIONS</th>
+              </tr>
+
+              <tr class="data-row">
+                <td>ORD-2025-OO1</td>
+                <td>
+                  Thea Rodriguez <br />
+                  <span class="customer-email">thea@example.com</span>
+                </td>
+                <td>11/22/2025</td>
+                <td>2</td>
+                <td class="price">PHP 8,999</td>
+                <td>
+                  <div class="table-status pending">PENDING</div>
+                </td>
+                <td>
+                  <div class="table-trash-dark">
+                    <img src="icons/trash.svg" />
+                    <div class="table-trash-red">
+                      <img src="icons/trash-red.svg" />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="data-row">
+                <td>ORD-2025-OO1</td>
+                <td>
+                  Jessica Rodriguez <br />
+                  <span class="customer-email">jessica@example.com</span>
+                </td>
+                <td>11/22/2025</td>
+                <td>1</td>
+                <td class="price">PHP 2,999</td>
+                <td>
+                  <div class="table-status shipped">SHIPPED</div>
+                </td>
+                <td>
+                  <div class="table-trash-dark">
+                    <img src="icons/trash.svg" />
+                    <div class="table-trash-red">
+                      <img src="icons/trash-red.svg" />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- ITEMS TO SHIP (WITH ORDERS) -->
+        <div class="single-admin-section">
+          <h2>Orders to Prepare for Shipping</h2>
+          <h5 class="header-info">Pending and processing orders</h5>
+
+          <div class="single-order-for-ship">
+            <h3>ORD-2025-001</h3>
+            <div class="order-for-ship-info">
+              <div>
+                <h5>Customer: Patrick Peji</h5>
+                <h5>patrick@email.com</h5>
+                <h5 class="number">Order Date: 11/22/2025</h5>
+              </div>
+              <div>
+                <div class="status-row">
+                  <h5>Status:</h5>
+                  <div class="order-status pending">PENDING</div>
+                </div>
+                <button class="button-processing">MARK AS PROCESSING</button>
+              </div>
+            </div>
+            <div class="order-for-ship-items">
+              <h5>ITEMS IN THIS ORDER:</h5>
+              <div class="single-order-for-ship-items">
+                <img
+                  src="icons/HD-wallpaper-laptop-keyboard-marble-aesthetics.jpg"
+                />
+
+                <div class="single-order-for-ship-items-info">
+                  <div>
+                    <h6>ELECTRONICS AND GADGETS</h6>
+                    <h4>Portable Bluetooth Speaker</h4>
+                    <h5 class="number">PHP 2,999 each</h5>
+                  </div>
+                  <div class="single-order-for-ship-items-info-row">
+                    <div>
+                      <h5>QUANTITY</h5>
+                      <h5 class="number quantity">1</h5>
+                    </div>
+                    <div>
+                      <h5>SUBTOTAL</h5>
+                      <h5 class="number price">PHP 2,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="single-order-for-ship-items">
+                <img
+                  src="icons/HD-wallpaper-laptop-keyboard-marble-aesthetics.jpg"
+                />
+
+                <div class="single-order-for-ship-items-info">
+                  <div>
+                    <h6>ELECTRONICS AND GADGETS</h6>
+                    <h4>Portable Bluetooth Speaker</h4>
+                    <h5 class="number">PHP 2,999 each</h5>
+                  </div>
+                  <div class="single-order-for-ship-items-info-row">
+                    <div>
+                      <h5>QUANTITY</h5>
+                      <h5 class="number quantity">1</h5>
+                    </div>
+                    <div>
+                      <h5>SUBTOTAL</h5>
+                      <h5 class="number price">PHP 2,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-for-ship-total">
+              <div>
+                <h5>ORDER TOTAL</h5>
+                <h5 class="number">PHP 5,998</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-order-for-ship">
+            <h3>ORD-2025-002</h3>
+            <div class="order-for-ship-info">
+              <div>
+                <h5>Customer: Patrick Peji</h5>
+                <h5>patrick@email.com</h5>
+                <h5 class="number">Order Date: 11/22/2025</h5>
+              </div>
+              <div>
+                <div class="status-row">
+                  <h5>Status:</h5>
+                  <div class="order-status processing">PROCESSING</div>
+                </div>
+                <button class="button-shipped">MARK AS SHIPPED</button>
+              </div>
+            </div>
+            <div class="order-for-ship-items">
+              <h5>ITEMS IN THIS ORDER:</h5>
+
+              <div class="single-order-for-ship-items">
+                <img
+                  src="icons/HD-wallpaper-laptop-keyboard-marble-aesthetics.jpg"
+                />
+
+                <div class="single-order-for-ship-items-info">
+                  <div>
+                    <h6>ELECTRONICS AND GADGETS</h6>
+                    <h4>Portable Bluetooth Speaker</h4>
+                    <h5 class="number">PHP 2,999 each</h5>
+                  </div>
+                  <div class="single-order-for-ship-items-info-row">
+                    <div>
+                      <h5>QUANTITY</h5>
+                      <h5 class="number quantity">1</h5>
+                    </div>
+                    <div>
+                      <h5>SUBTOTAL</h5>
+                      <h5 class="number price">PHP 2,999</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-for-ship-total">
+              <div>
+                <h5>ORDER TOTAL</h5>
+                <h5 class="number">PHP 2,999</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--ITEMS TO SHIP (WITHOUT ORDERS) -->
+        <div class="single-admin-section">
+          <h2>Orders to Prepare for Shipping</h2>
+          <h5 class="header-info">Pending and processing orders</h5>
+          <div class="order-for-ship-empty">
+            <img src="icons/box-svgrepo-com-light-gray.svg" />
+            <h3>No Orders to Ship</h3>
+            <h5>All orders have been shipped. Great job!</h5>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <section class="main-footer-section">
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">Balani</h1>
+          <p class="single-footer-description">
+            Your trusted destination for premium products across electronics,
+            fashion, home goods, and fitness equipment.
+          </p>
+          <div class="socials-row">
+            <div class="socials-icon">
+              <img src="icons/facebook.svg" />
+            </div>
+            <div class="socials-icon">
+              <img src="icons/twitter.svg" />
+            </div>
+            <div class="socials-icon">
+              <img
+                src="icons/instagram-socials-social-media-icon-svgrepo-com.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">SHOP</h1>
+          <div class="single-footer-links">
+            <p>All Products</p>
+            <p>Electronics &amp; Gadgets</p>
+            <p>Fashion &amp; Apparel</p>
+            <p>Home &amp; Kitchen</p>
+            <p>Health &amp; Fitness</p>
+          </div>
+        </div>
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">QUICK LINKS</h1>
+          <div class="single-footer-links">
+            <p>Home</p>
+            <p>My Account</p>
+            <p>Shopping Cart</p>
+            <p>Orders</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div class="single-footer-row">
+          <h1 class="single-footer-title">CONTACT</h1>
+          <div class="single-footer-contacts">
+            <div class="contact-row">
+              <img src="icons/mail.svg" />
+              <p>support@balani.com</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/phone.svg" />
+              <p class="contact-number">(012) 345 6789</p>
+            </div>
+            <div class="contact-row">
+              <img src="icons/map-marker-2.svg" />
+              <p>Lukushin Ibaba, Alfonso</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyright-section">
+        &copy; 2025 Balani. All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>
